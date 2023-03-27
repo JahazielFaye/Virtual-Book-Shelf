@@ -25,7 +25,7 @@ const startApolloServer = async (typeDefs, resolvers) => {
   // integrate our Apollo server with the Express application as middleware
   server.applyMiddleware({ app });
 
-  // Serve up static assets
+  // Serve up static assetss
   if (process.env.NODE_ENV === "production") {
     app.use(express.static(path.join(__dirname, "../client/build")));
   }
